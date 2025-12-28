@@ -1,7 +1,7 @@
-from django.contrib import admin
-from django.urls import path ,include
-from .views import Home
+from django.urls import path
+from .views import Home, login
 
 urlpatterns = [
     path('Home', Home),
+    path('login', login, name='login'),
 ]
